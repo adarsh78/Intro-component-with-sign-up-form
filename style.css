@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,*::after, 
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    max-width: 24rem;
+    /* background-color: grey; */
+}
+
+.sec1{
+    margin: 4rem 0;
+}
+
+.sec1 .heading{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    line-height: 2.8rem;
+    margin-bottom: 1.575rem;
+    text-align: center;
+}
+
+.sec1 .text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.sec2 .offer{
+    width: 100%;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.8rem;
+    box-shadow: 0px 3px 8px 0px rgba(12,10,20,1);
+}
+
+.sec2 .offer h2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem 4rem;
+    line-height: 2rem;
+}
+
+.sec2 .offer span{
+    font-weight: 400;
+}
+
+.info-form{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 3px 8px 0px rgba(12,10,20,1);
+}
+
+.formControl input {
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+}
+
+.formControl input:focus{
+    outline: 0;
+}
+
+.formControl.success input {
+    border: 2px solid #09c372;
+}
+
+.formControl.error input {
+    border: 2px solid #ff3860 ;
+}
+
+.formControl .error {
+    color: #ff3860;
+    margin-top: -0.8rem;
+    font-size: 12px;
+    height: 17px;
+    font-style: italic;
+    position: absolute;
+    right: 2.2rem;
+}
+
+::placeholder{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.formControl input{
+    padding-left: 1.2rem;
+}
+
+.error-img{
+    display: none;
+    position: absolute;
+    right: 4rem;
+    margin-top: -3.3rem;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px 8px 0px rgba(12,10,20,1);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 1px solid hsl(154, 59%, 51%);
+    color: hsl(154, 59%, 51%);
+    /* transform: 0.9s ease; */
+}
+
+.info-form .terms{
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+}
+
+.info-form .terms span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background : url(images/bg-intro-desktop.png) no-repeat hsl(0, 100%, 74%);
+        background-size: cover;
+    }
+
+    .main{
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec1, .sec2{
+        flex: 0.5;
+    }
+
+    .sec1 .heading{
+        font-size: 1.5rem;
+        padding: 0 6rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .sec1 .text{
+        padding: 0 6rem;
+        font-size: 0.8rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .sec2 .offer{
+        height: 3rem;
+        width: 80%;
+        border-radius: 0.5rem;
+    }
+
+    .sec2 .offer h2{
+        font-size: 0.9rem;
+        padding-top: 0.6rem;
+        
+    }
+
+    .formControl input{
+        height: 3rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .info-form{
+        border-radius: 0.5rem;
+        width: 80%;
+    }
+
+    button{
+        height: 3rem;
+    }
+
+    .info-form .terms{
+        font-size: 0.6rem;
+        margin-bottom: 1.5rem;
+    }
+  }
+
