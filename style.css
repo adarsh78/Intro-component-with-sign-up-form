@@ -13,7 +13,7 @@ html{
 
 body{
     background-color: hsl(0, 100%, 74%);
-    background-image: url(images/bg-intro-mobile.png);
+    background-image: url(https://user-images.githubusercontent.com/64201509/227504879-32730cdf-c348-4703-8486-5e48e70d3129.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -26,12 +26,12 @@ body{
 }
 
 .main{
-    max-width: 24rem;
+    width: 100%;
     /* background-color: grey; */
 }
 
 .sec1{
-    margin: 4rem 0;
+    margin: 4rem auto;
 }
 
 .sec1 .heading{
@@ -51,12 +51,12 @@ body{
 }
 
 .sec2 .offer{
-    width: 100%;
+    width: 90%;
     height: 7rem;
     border-radius: 1rem;
     background-color: hsl(248, 32%, 49%);
     color: hsl(0, 0%, 100%);
-    margin-bottom: 1.8rem;
+    margin: 1.8rem auto;
     box-shadow: 0px 3px 8px 0px rgba(12,10,20,1);
 }
 
@@ -73,11 +73,12 @@ body{
 }
 
 .info-form{
+    width: 90%;
     position: relative;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1rem;
     padding: 1rem 2rem;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
     box-shadow: 0px 3px 8px 0px rgba(12,10,20,1);
 }
 
@@ -124,7 +125,7 @@ body{
     display: none;
     position: absolute;
     right: 4rem;
-    margin-top: -3.3rem;
+    margin-top: -4rem;
 }
 
 button {
@@ -168,7 +169,7 @@ button:hover{
 
 @media (min-width: 1200px) {
     body {
-        background : url(images/bg-intro-desktop.png) no-repeat hsl(0, 100%, 74%);
+        background : url(https://user-images.githubusercontent.com/64201509/227504989-335e8db3-7dea-4b8e-b7f5-737082842995.png) no-repeat hsl(0, 100%, 74%);
         background-size: cover;
     }
 
@@ -185,7 +186,7 @@ button:hover{
     }
 
     .sec1 .heading{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 0 6rem;
         text-align: left;
         margin-left: 3rem;
@@ -215,6 +216,11 @@ button:hover{
         width: 100%;
         border-radius: 0.5rem;
     }
+  
+  .error-img{
+
+    margin-top: -3.3rem;
+}
 
     .info-form{
         border-radius: 0.5rem;
@@ -229,5 +235,6 @@ button:hover{
         font-size: 0.6rem;
         margin-bottom: 1.5rem;
     }
+  
   }
 
