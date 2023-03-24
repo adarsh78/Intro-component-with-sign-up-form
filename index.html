@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="main">
+    <section class="sec1">
+      <div class="heading">
+        <h1>Learn to code by watching others</h1>
+      </div>
+      <div class="text">
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+           but understanding how developers think is invaluable.
+        </p>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <div class="offer">
+        <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+      </div>
+
+      <form id="form" class="info-form" action="#">
+        <div class="formControl"> 
+          <label for="fname"></label>
+          <input type="text" id = "fname" name = "fname" placeholder="First Name" autocomplete="off" required>
+          <img src="images/icon-error.svg" alt="icon-error" class="error-img">
+          <div class="error"></div>
+        </div>
+        <div class="formControl">
+          <label for="lname"></label>
+          <input type="text" id = "lname" name = "lname" placeholder="Last Name" autocomplete="off" required>
+          <img src="images/icon-error.svg" alt="icon-error" class="error-img">
+          <div class="error"></div>
+        </div>
+        <div class="formControl"> 
+          <label for="email"></label>
+          <input type="email" id = "email" name = "email" placeholder="Email Address" autocomplete="off" required>
+          <img src="images/icon-error.svg" alt="icon-error" class="error-img">
+          <div class="error"></div>
+        </div>
+        <div class="formControl"> 
+          <label for="password"></label>
+          <input type="password" id = "password" name = "password" placeholder="Password" autocomplete="off" required>
+          <img src="images/icon-error.svg" alt="icon-error" class="error-img">
+          <div class="error"></div>
+        </div>
+        <button type="submit" class="btn" id="btn">Claim your free trial</button>
+
+        <div class="terms">
+          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
