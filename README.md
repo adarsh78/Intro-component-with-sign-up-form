@@ -44,4 +44,4 @@ Users should be able to:
 
 - Frontend Mentor - [@adarsh78](https://www.frontendmentor.io/profile/adarsh78)
 - Twitter - [@adarsh_kgupta](https://twitter.com/adarsh_kgupta)
-- Codepen - [@adarsh78](https://codepen.io/adarsh78)**
+- Codepen - [@adarsh78](https://codepen.io/adarsh78)
